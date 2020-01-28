@@ -75,7 +75,11 @@
       header {
         background: #c0c0c0;
       }
-      
+
+      .sakura-bg {
+        background-image: url("{{ "/assets/images/sakura-may-2019_30.jpg" | relative_url }}");
+      }
+
     </style>
 
   </head>
@@ -120,7 +124,7 @@
 
     {{ content}}
 
-    <footer class="text-muted">
+    <footer class="text-muted sakura-bg">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>
