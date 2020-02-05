@@ -25,50 +25,32 @@
     <style>
 
       main {
-        background-color: #ffb7c5;
+        background-image: url("{{ "/assets/images/sakura-may-2019_30.jpg" | relative_url }}");
+        background-size:cover
+        background-repeat: no-repeat;
       }
       
       footer {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
       }
 
       footer p {
         margin-bottom: .25rem;
       }
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-    
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-      
       header {
         background: #c0c0c0;
       }
       
       header .active span {
         text-decoration: underline;
-        
       }
       
       .navbar-light .navbar-nav .nav-link,
       .navbar-light .navbar-nav .active > .nav-link {
         color: #000;
         font-weight: 500;
-      }
-      
-      .sakura-bg {
-        background-image: url("{{ "/assets/images/sakura-may-2019_30.jpg" | relative_url }}");
       }
 
     </style>
@@ -79,12 +61,12 @@
     {{ content}}
 
     <footer>
-      <div class="container">
+      <div class="mx-4">
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
         <p>
-        <span>April 11th, 2020<span>
+          <span>April 11th, 2020<span>
         </p>
       </div>
     </footer>
