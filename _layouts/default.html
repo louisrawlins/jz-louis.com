@@ -24,6 +24,11 @@
     
     <style>
 
+      body {
+        background: #ddd;
+        max-width: 960px;
+      }
+
       main#home {
         background-image: url("{{ "/assets/images/sakura-may-2019_30.jpg" | relative_url }}");
         background-size: cover
@@ -31,7 +36,14 @@
         background-position: -170px 0;
       }
       
+      main#schedule,
+      main#registry,
+      main#places {
+        background: #ffb7c5;
+      }
+      
       footer {
+        background: #f8f9fa;
         padding-top: 1rem;
         padding-bottom: 1rem;
       }
